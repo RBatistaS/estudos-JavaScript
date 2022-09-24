@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: cadetblue;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello word!</h1>
+    <p>Já me livrei da maldição...</p>
+    <script>
+        // //quando utilizamos o comando prompt ele sempre retorna uma string, portanto devemos converter essa string em number se quisermos receber um valor numerico
+        var n1 = Number(window.prompt('digite um número: ')) //string
+        var n2 = Number(window.prompt('digite outro número: ')) //string
+        var s = n1 + n2
+        
+        window.alert('A soma entre ' + n1 + ' e ' + n2 + ' é igual a ' + s) //concatenação
+        //(number + number) para adição
+        //(string + string) para concatenação
+    </script>
+</body>
+</html>
