@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(49, 49, 218);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h">Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p name="na">Aprendendo a usar o <strong>Dom</strong> em JavaScript.</p>
+    <p id="que">outro exemplo</p>
+    <div id="mensagem">Clique em mim</div><br>
+
+    <!-- JS -->
+    <!-- Abaixo temos 5 metodos de acesso aos elementos da nossa árvore DOM  
+        por Marca
+        por ID
+        por Nome
+        por Classe
+        por Seletor
+    
+    -->
+
+    <script>
+        // exemplo de metodos de acesso
+
+        // POR MARCA
+        // var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0];
+        window.document.write('Está escrito assim:' + p1.innerText);
+        p1.style.color = 'red'
+        window.alert(p1.innerHTML)
+        // corpo.style.background = 'lightgrey'
+        // corpo.style.color = 'black'
+
+        // POR ID
+        var d = window.document.getElementById('mensagem')
+        d.style.background = 'lightgreen'
+        d.style.color = 'black'
+
+
+        // POR  NAME
+        var n = window.document.getElementsByName('na')[0]
+        n.style.background = 'green'
+        n.style.color = 'black'
+
+
+        // POR CLASSE
+        var n = window.document.getElementsByClassName('h')[0]
+        n.style.background = 'lightgrey'
+        n.style.color = 'black'
+
+        // POR SELETOR
+        // aqui podemos fazer uso tanto do (ID)  quanto da (CLASSE). 
+        var q = window.document.querySelector('#que')
+        q.style.background = 'lightgrey'
+        q.style.color = 'black'
+    </script>
+</body>
+</html>
