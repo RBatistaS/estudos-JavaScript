@@ -22,7 +22,7 @@ console.log(num[2])
 //console.log(`O valor 2 está na posição ${pos}`)
 
 // se o comando para buscar a chave for um numero que não existe no vetor, o programa ira retornar o valor -1 indicando que a chave não existe
-let pos = num.indexOf(10)
+let pos = num.indexOf(10   )
 if (pos == -1) {
     console.log('O valor não foi encontrado!')
 } else {
